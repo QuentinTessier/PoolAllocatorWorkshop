@@ -4,7 +4,12 @@
 #include <stdint.h>
 
 typedef struct MemoryPool {
-
+    uint32_t nBlocks;
+    uint32_t sizeBlocks;
+    uint32_t nFreeBlocks;
+    uint32_t nBlockInit;
+    uint8_t *memStart;
+    uint8_t *memNext;
 } MemoryPool;
 
 MemoryPool *MemoryPool_create(size_t, size_t);
