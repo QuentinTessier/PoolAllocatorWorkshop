@@ -1,10 +1,11 @@
 #pragma once
 
 #include <stddef.h>
+#include <stdint.h>
 
 typedef struct MemoryPool {
 
-};
+} MemoryPool;
 
 MemoryPool *MemoryPool_create(size_t, size_t);
 void MemoryPool_reset(MemoryPool *);
